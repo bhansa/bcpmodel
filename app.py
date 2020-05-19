@@ -71,8 +71,3 @@ def predict():
 			return jsonify(predict_image(data))
 	except KeyError:
 		return jsonify("Provide a proper value for address!")
-
-
-
-if __name__ == '__main__':
-	app.run(debug = True)
