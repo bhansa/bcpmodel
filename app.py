@@ -33,7 +33,7 @@ def channel_zeropad_output(input_shape, channel_axis=3):
 
 	return tuple(shape)
 
-model = keras.models.load_model('mySeResnextModel.hdf5', custom_objects= {'channel_zeropad': channel_zeropad, 'channel_zeropad_output': channel_zeropad_output})
+model = keras.models.load_model('/model/mySeResnextModel.hdf5', custom_objects= {'channel_zeropad': channel_zeropad, 'channel_zeropad_output': channel_zeropad_output})
 # model.compile(loss='categorical_crossentropy', optimizer='Adamax', metrics=['accuracy'])
 
 app = Flask(__name__)
